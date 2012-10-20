@@ -3,7 +3,7 @@ class BlogController < ApplicationController
   before_filter :find_post, :except => [:index]
 
   def index
-    @posts = Post.all
+    @posts = Post.order('created_at DESC').all
   end
 
   def show; end
