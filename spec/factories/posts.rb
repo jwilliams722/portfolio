@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :post do
+  factory :posts do
     title 'Test'
     content 'Lorem Ipsum'
   end

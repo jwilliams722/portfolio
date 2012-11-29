@@ -7,5 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 5.times do |i|
-  Post.create({:title => "post #{i}", :content => "Lorem ipsum"})
+  Post.create({:title => "posts #{i}", :content => "Lorem ipsum"})
 end

@@ -8,24 +8,18 @@ Portfolio::Application.routes.draw do
 
 
 
-  # GET :blog -> blog#index
-  # GET :blog/:id -> blog#show
-  # GET :blog/:id/edit -> blog#edit
-  # PUT :blog/:id -> blog#update
-  # GET :blog/new -> blog#new
-  # POST :blog -> blog#create
-  # DELETE :blog -> blog#destroy
-  resources :blog, :only => [:index, :show]
+  # GET :posts -> posts#index
+  # GET :posts/:id -> posts#show
+  # GET :posts/:id/edit -> posts#edit
+  # PUT :posts/:id -> posts#update
+  # GET :posts/new -> posts#new
+  # POST :posts -> posts#create
+  # DELETE :posts -> posts#destroy
+  resources :posts
   resources :users
   resources :sessions
-  resources :work, :only => [:index, :show]
-
-
-  namespace :admin do
-  resources :posts
   resources :projects
 
-  end
 
   #root :to => 'admin/posts#index'
   #root :to => 'admin/projects#index'
