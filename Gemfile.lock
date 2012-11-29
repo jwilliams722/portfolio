@@ -30,6 +30,7 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
+    bootstrap-sass (2.1.0.0)
     builder (3.0.3)
     carrierwave (0.6.2)
       activemodel (>= 3.2.0)
@@ -111,6 +112,9 @@ GEM
       tilt (~> 1.3)
     shoulda-matchers (1.3.0)
       activesupport (>= 3.0.0)
+    simple_form (2.0.4)
+      actionpack (~> 3.0)
+      activemodel (~> 3.0)
     sprockets (2.1.3)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -130,6 +134,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt-ruby
+  bootstrap-sass
   carrierwave
   coffee-rails (~> 3.2.1)
   factory_girl_rails
@@ -140,4 +145,5 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 3.2.3)
   shoulda-matchers
+  simple_form
   uglifier (>= 1.0.3)

@@ -1,0 +1,30 @@
+<h1>Project List</h1>
+
+<table class="table table-striped">
+  <tr>
+    <th></th>
+    <th>Title</th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @projects.each do |project| %>
+      <tr>
+        <td><%= %></td>
+        <td><%= project.title %></td>
+        <td>
+          <%= image_tag project.image_url(:thumb) %>
+        </td>
+        <td><%= project.content %></td>
+        <td><%= link_to 'Show', work_path(project), :class => "btn btn-inverse btn-mini" %></td>
+
+      </tr>
+  <% end %>
+</table>
+
+<br />
+<br />
+<br />
+

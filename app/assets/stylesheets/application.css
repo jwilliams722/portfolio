@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
  */
+
+.login-status {
+    text-align: right;
+    padding-top: 11px;
+    font-size: 0.8em;
+}

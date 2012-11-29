@@ -1,7 +1,5 @@
 class Admin::PostsController < Admin::BaseController
 
-  before_filter :login_required
-
   def index
     @posts = Post.all
 
