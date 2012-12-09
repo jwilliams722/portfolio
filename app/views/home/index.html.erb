@@ -1,15 +1,63 @@
-<div class="span8">
-  <h1>JW Personal Portfolio</h1>
+<div class="row">
+  <div class="span7">
+    <h1>John Williams Portfolio</h1>
+
+    <div class="my_photo">
+      <%= image_tag("Profile.JPG", :class => 'my_photo') %>
+    </div>
+  </div>
+  <div class="span5">
+    <div class="row">
+      <h2>About:</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </p>
+    </div>
+    <div class="row">
+      <h2>Connect:</h2>
+      <div class="connect_icons">
+        <%= link_to image_tag("linkedin-icon.png", :class => 'connect_icon'), "http://www.linkedin.com/pub/john-williams/22/5b0/567" %>
+        <%= link_to image_tag("twitter-icon.png", :class => 'connect_icon'), "https://twitter.com/theillmrwill" %>
+        <%= link_to image_tag("github.png", :class => 'github_icon'), "https://github.com/jwilliams722" %>
+      </div>
+
+      <%= mail_to("jwilliams722@gmail.com") %>
+
+    </div>
+  </div>
 </div>
-<div class="span4 pull-right">
-  <h2>About:</h2>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-  laborum.
+
+<div class="row">
+  <div class="span12">
+    <h2>Projects:</h2>
+
+    <div id="myCarousel" class="carousel slide">
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item">
+          <%= image_tag("Commerce Site.png") %>
+          <div class="carousel-caption">
+            <h4>Artist's E-commerce Site</h4>
+            <p>
+              This an e-commerce site that I created for my artist friends that
+              wanted to sell their work over the internet. It allows them to keep
+              track of their customers and purchase histories.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+  </div>
 </div>
 
 
