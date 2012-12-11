@@ -23,7 +23,6 @@
       <div class="nav-collapse">
         <ul class="nav">
 
-          <li><%= link_to 'Projects', projects_path %></li>
           <li><%= link_to 'Blog', posts_path %></td></li>
         </ul>
       </div>
@@ -31,10 +30,8 @@
         <% if current_user %>
             Logged in as <%= current_user.email %>.
             <%= link_to "Log out", log_out_path %>
-        <% else %>
-            <%= link_to "Sign up", sign_up_path, :class => "btn btn-inverse btn-mini" %> or
-            <%= link_to "Admin Log in", log_in_path, :class => "btn btn-inverse btn-mini" %>
         <% end %>
+
       </div>
     </div>
   </div>
